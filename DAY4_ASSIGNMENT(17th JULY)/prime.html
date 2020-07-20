@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            prime number
+        </title>
+    </head>
+    <body>
+        <script>
+            function prime(m){
+            var st=[ ],i,j,primes=[ ];
+            for(i=2;i<=m;++i)
+            {
+                if (!st [i]) 
+                {
+                    primes.push(i);
+                    for (j = i << 1; j <= m; j += i) 
+                    {
+                        st[j] = true;
+                    }
+                }
+            }
+            return primes;
+            }
+        console.log(prime(2));
+        
+        console.log(prime(10));
+        </script>
+    </body>
+</html>

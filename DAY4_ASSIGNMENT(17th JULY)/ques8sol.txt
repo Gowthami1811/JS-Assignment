@@ -1,0 +1,19 @@
+Q8:funtion ask(question,yes,no){
+    if(confirm(question)) yes()
+    else no();
+}
+ask(
+    "Do you Agree?",
+   function( ) { alert("you agreed.");},
+   function( ) { alert("you cabcelled the execution");}
+    );
+
+A:funtion ask(question,yes,no){
+    if(confirm(question)) yes()
+    else no();
+}
+ask(
+    "Do you Agree?",
+    () =>alert("you agreed.");,
+    () =>alert("you cabcelled the execution");
+    );

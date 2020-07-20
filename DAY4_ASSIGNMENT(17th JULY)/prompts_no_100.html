@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>
+            prompts number greater than 100
+        </title>
+    </head>
+    <body>
+        <script>
+            let num=(function prompt_num(){
+                let n=prompt('Number from 1 to 100:');
+                return isNaN(n) || +n > 100 || +n < 1 ? prompt_num() : n;
+            } ());
+        </script>
+    </body>
+</html>

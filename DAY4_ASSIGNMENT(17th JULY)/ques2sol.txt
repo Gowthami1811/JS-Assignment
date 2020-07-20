@@ -1,0 +1,14 @@
+Question 2:
+const student= {
+    name:"Helsinki",
+    age:24,
+    projects:{
+        diceGame:"Two player dice game using JavaScript"
+    }
+}
+
+
+A:
+//object Destructuring
+const { name,age,projects:{diceGame="Two player dice game using JavaScript"}= student;
+console.log(`${name} ${age} ${projects}`);

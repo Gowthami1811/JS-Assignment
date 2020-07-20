@@ -1,0 +1,9 @@
+funtion ask(question,yes,no){
+    if(confirm(question)) yes()
+    else no();
+}
+ask(
+    "Do you Agree?",
+    () =>alert("you agreed.");,
+    () =>alert("you cabcelled the execution");
+    );
