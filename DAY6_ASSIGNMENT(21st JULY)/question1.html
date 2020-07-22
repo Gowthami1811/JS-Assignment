@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>
+            BackGround Color
+        </title>
+        <script>
+        let c=["organge","blue","yellow","red","green"];
+        let currColorIndex=0;
+        function changeColor(){
+            document.bgColor=c[currColorIndex]
+            currColorIndex=(currColorIndex + 1) % c.length;
+            setTimeout(changeColor,5000)
+        }     
+        </script>
+    </head>
+    <body onload="changeColor()">
+        <h1>LetsUpgrade</h1>
+    </body>
+</html>

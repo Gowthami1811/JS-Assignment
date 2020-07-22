@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>
+            DOM
+        </title>
+    </head>
+    <body>
+        <h2> Document Object Model</h2>
+        <h1 id="title"></h1>
+        <h4 id="time">Clock</h4>  
+
+
+
+
+        <script>
+            const n=prompt("enter the name:","Anonymous");
+            title.innerText+=`Welcome to Webpage ${n}`;
+            function changeColor(){
+                setTimeout(()=>{
+                    document.body.style.backgroundColor = 'black';
+                    document.body.style.color='white'
+                    document.body.style.fontFamily="italic"
+                },2000);
+            }
+            changeColor();
+
+            const ctime=document.getElementById('time');
+            function clock(){
+                let date=new Date();
+                let time=date.toLocaleTimeString();
+                ctime.innerText=time;
+
+
+
+            }
+            clock();
+        </script>
+    </body>
+</html>
